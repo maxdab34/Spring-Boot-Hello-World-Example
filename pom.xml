@@ -52,6 +52,16 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
+				 <artifactId>maven-checkstyle-plugin</artifactId>
+            <version>3.1.2</version> <!-- Remplacez la version par la version la plus récente -->
+            <executions>
+                <execution>
+                    <phase>verify</phase>
+                    <goals>
+                        <goal>check</goal>
+                    </goals>
+                </execution>
+            </executions>
 			</plugin>
 		</plugins>
 	</build>
